@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+
+<html xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+  <head>
+  <!-- DEPENDENCIES -->
+  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
+  <script src="https://moistbobo.github.io/CN-Web/cho.js"></script>
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  
+  <link rel="stylesheet" type="text/css" href="https://moistbobo.github.io/CN-Web/cho.css"/>
+  
+    <!-- DEPENDENCIES END -->
+    
+    <b:include data='blog' name='all-head-content'/>
+    <title>
+      <b:if cond='data:blog.pageType == &quot;index&quot;'>
+        <data:blog.pageTitle/>
+        <b:else/>
+        <b:if cond='data:blog.pageType != &quot;error_page&quot;'>
+          <data:blog.pageName/>
+          | 
+          <data:blog.title/>
+          <b:else/>
+          Page Not Found | 
+          <data:blog.title/>
+        </b:if>
+      </b:if>
+    </title>
+    <b:skin><![CDATA[]]></b:skin>
+  </head>
+  <body>  
+  
+<div class="mainsection logo black center">
+	<img class="img" src="http://i.imgur.com/GPgk7IT.jpg"></img>
+</div>
+
+<div class="smallsection white center">
+<div class="center">
+	<p>This is the Black Desert Chapter of Lord Cho's Choly Chosaders</p>
+	<p>As dauntless followers of Lord Cho, the Chos fight fearlessly with memes, love, and friendship <br/>to unite the broken lands of BDO NA.</p>
+</div>
+</div>
+  	
+<div class = "section black center">
+
+<div class="tab" id="videoTab">
+
+<button class="tablinks" onclick="openTab(event, 'SE1E1')">SE1E1</button>
+<button class="tablinks" onclick="openTab(event, 'SE1E2')">SE1E2</button>
+<button class="tablinks" onclick="openTab(event, 'SE2E1')">SE2E1</button>
+<div id ="SE1E1" class = "tabcontent">
+<iframe id ="vid1" src="https://www.youtube.com/embed/j3-QSBcuWJk?enablejsapi=1" width="100%" height="90%" frameborder="5" controls="1" allowfullscreen webkitallowfullscreen mozallowfullscreen scrolling="no"></iframe>
+</div>
+<div id ="SE1E2" class = "tabcontent">
+<iframe id = "vid2" src="https://www.youtube.com/embed/dhtBcc5VPU4?enablejsapi=1" width="100%" height="90%" frameborder="5" controls="1 allowfullscreen webkitallowfullscreen mozallowfullscreen scrolling="no"></iframe>
+</div>
+<div id ="SE2E1" class = "tabcontent">
+<iframe id = "vid3" src="https://vid.me/e/r7eb?stats=1?enablejsapi=1" width="100%" height="90%" frameborder="5" allowfullscreen webkitallowfullscreen mozallowfullscreen scrolling="no"></iframe>
+</div>
+
+
+</div>
+
+
+</div>
+        <b:section class='sidebar' id='sidebar' maxwidgets='' showaddelement='yes'/>
+      <b:section class='footer' id='footer' maxwidgets='' showaddelement='yes'/>
+  </body>
+ 
+</html>
