@@ -42,7 +42,7 @@ function InsertVidTabButtons(args)
 {
 	var tabs = args.split(" ");	
 	tabs.forEach((tabs)=>{
-	document.write("<button type='tablinks' onclick='openTab(event,\""+tabs+"\")'>"+tabs+"</button>");
+	document.write("<button class='tablinks' onclick='openTab(event,\""+tabs+"\")'>"+tabs+"</button>");
 	})
 }
 
