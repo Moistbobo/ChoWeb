@@ -7,11 +7,11 @@ function openTab(evt, movieName) {
   const tabcontent = document.getElementsByClassName("tabcontent");
   const tablinks = document.getElementsByClassName("tablinks");
 
-  tabcontent.forEach((tabcontent) => {
+  Array.from(tabcontent).forEach((tabcontent) => {
     tabcontent.style.display = "none";
   })
 
-  tablinks.forEach((tablinks) => {
+  Array.from(tablinks).forEach((tablinks) => {
     tablinks.className = tablinks.className.replace(" active", "");
   })
 
@@ -27,4 +27,31 @@ function pauseVid(){
   let vidMeiFrame = $("#vid3").detach();
   vidMeiFrame.appendTo("#SE2E1");
   vidMeiFrame = null;
+}
+
+function ScrollToElement(eleName)
+{
+	setTimeout(function(){
+	$('html, body').animate({
+	scrollTop: $(eleName).offset().top-50
+	},500);
+}, 100);
+}
+
+function InsertVidTabButtons(args)
+{
+	var tabs = args.split(" ");	
+	tabs.forEach((tabs)=>{
+	document.write("<button type='tablinks' onclick='openTab(event,\""+tabs+"\")'>"+tabs+"</button>");
+	})
+}
+
+function InsertVideo(type, divid, divclasses, vidid, vidLink)
+{
+	var _insert;
+	if (type == 0) // Youtube
+		_insert = "<div id ="+divid+" class = " +divclasses +" tabcontent'>" +"<iframe id = "+ vidid + " src="+"'"+ vidLink +"'"+" width='100%' height='90%' frameborder='5' allowfullscreen webkitallowfullscreen mozallowfullscreen scrolling='no'></iframe>" +" </div>";
+	else if (type == 1) // vidme
+		_insert = "<div id ="+divid+" class = " +divclasses +" tabcontent'>" +"<iframe id = "+ vidid + " src="+"'"+ vidLink +"'"+" width='100%' height='90%' frameborder='5' allowfullscreen webkitallowfullscreen mozallowfullscreen scrolling='no'></iframe>" +" </div>";
+	document.write(_insert);
 }
