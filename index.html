@@ -10,12 +10,12 @@
   crossorigin="anonymous"></script>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-			<script src="https://moistbobo.github.io/ChoWeb/cho.js"></script> 
-			<link rel="stylesheet" type="text/css" href="https://moistbobo.github.io/ChoWeb/cho.css"/> 	
+				<script src="https://moistbobo.github.io/ChoWeb/cho.js"></script> 
+			<link rel="stylesheet" type="text/css" href="https://moistbobo.github.io/ChoWeb/cho.css"/> 
 
-		<!--		<script src="cho.js"></script>  
-			<link rel="stylesheet" type="text/css" href="cho.css"/>	-->
-	
+			<!--<script src="cho.js"></script>  
+			<link rel="stylesheet" type="text/css" href="cho.css"/>-->
+
 
 			<!-- DEPENDENCIES END -->
 
@@ -36,7 +36,7 @@
 			</title>
 			<b:skin><![CDATA[]]></b:skin>
 		</head>
-		<body>
+		<body class="black">
 			<div class="mainsection black center">
 				<div style="height:80%;">
 					<img class="img" src="http://i.imgur.com/GPgk7IT.jpg"></img>
@@ -50,18 +50,36 @@
 			</div>
 
 			<div class="smallsection black center">
-			<div class="expandingButton btn" data-toggle="collapse" data-target="#video_section_content" onclick="ScrollToElement('#video_section_content');pauseVid();"/>
+				<div class="expandingButton expb_video btn" data-toggle="collapse" data-target="#video_section_content" onclick="ScrollToElement('#video_section_content');pauseVid();"/>
 			</div>
 			<div id="video_section_content" class="section black center collapse">
 				<div class="tab" id="videoTab">
 					<script>
-		InsertVidTabButtons("SE1E1 SE1E2 SE2E1");
-		InsertVideo(0,"SE1E1","tabcontent","vid1","https://www.youtube.com/embed/j3-QSBcuWJk?enablejsapi=1");
-		InsertVideo(0,"SE1E2","tabcontent","vid2","https://www.youtube.com/embed/dhtBcc5VPU4?enablejsapi=1");
-		InsertVideo(1,"SE2E1","tabcontent","vid3","https://vid.me/e/r7eb?stats=1?enablejsapi=1");
+						InsertVidTabButtons("SE1E1 SE1E2 SE2E1");
+						InsertVideo(0,"SE1E1","tabcontent","vid1","https://www.youtube.com/embed/j3-QSBcuWJk?enablejsapi=1");
+						InsertVideo(0,"SE1E2","tabcontent","vid2","https://www.youtube.com/embed/dhtBcc5VPU4?enablejsapi=1");
+						InsertVideo(1,"SE2E1","tabcontent","vid3","https://vid.me/e/r7eb?stats=1?enablejsapi=1");
 					</script>
 				</div>
 			</div>
+
+			<div class = "smallsection black center">
+				<div class="expandingButton expb_join btn" data-toggle="collapse" data-target="#join_section_content" onclick="ScrollToElement('#join_section_content'); pauseVid();"/>
+			</div>
+			<div id="join_section_content" class="section black center collapse">
+			<div class="smallsection">
+			<p>If you want to join you need these requirements:</p>
+			<p>abcabcabcabcabcabcabcababcabcabc</p>
+			</div>
+			</div>
+
+			<div class = "smallsection black center">
+				<div class="expandingButton expb_memes btn" data-toggle="collapse" data-target="#memes_section_content" onclick="ScrollToElement('#memes_section_content'); pauseVid();"/>
+			</div>
+			<div id="memes_section_content" class="section black center collapse">
+			<p>Memes go here</p>
+			</div>
+			<!-- Blogger required sections -->
 			<b:section class='sidebar' id='sidebar' maxwidgets='' showaddelement='yes'/>
 			<b:section class='footer' id='footer' maxwidgets='' showaddelement='yes'/>
 		</body>
