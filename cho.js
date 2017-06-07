@@ -20,6 +20,23 @@ function openTab(evt, movieName) {
   evt.currentTarget.className += " active";
 }
 
+
+$( document ).ready(function() {	
+	$('.grid').isotope({
+	  itemSelector: '.grid-item',
+  percentPosition: true,
+  masonry: {
+  columnWidth: 100,
+  horizontalOrder: true
+}
+	})
+	
+	let memeContent = $("#memecontent").detach();
+	memeContent.appendTo("#memes_section_content");
+	memeContent = null;
+	
+});
+
 function pauseVid(){
   $('iframe[src*="//www.youtube.com/embed/"]').each(function(i) {
     this.contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*');

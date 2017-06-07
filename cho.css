@@ -93,6 +93,10 @@ div.tab button.active {
 	background-image: url("https://i.imgur.com/0LtCtHk.png");
 }
 
+.gridcontents{
+	margin-left: 15%;
+	margin-right: 15%;
+}
 
 .center p{
 	font-family: adventpsychosis;
