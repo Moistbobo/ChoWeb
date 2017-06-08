@@ -63,6 +63,14 @@ function InsertVidTabButtons(args)
 	})
 }
 
+function InsertMemes(args)
+{
+	var memes = args.split(" ");
+	memes.forEach((memes)=>{
+	document.write("<img class='grid-item' src='"+memes+"'></img>");
+	})
+}
+
 function InsertVideo(type, divid, divclasses, vidid, vidLink)
 {
 	var _insert;
