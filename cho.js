@@ -29,13 +29,19 @@ $( document ).ready(function() {
   columnWidth: 100,
   horizontalOrder: true
 }
-	})
-	
+	})	
 	let memeContent = $("#memecontent").detach();
 	memeContent.appendTo("#memes_section_content");
 	memeContent = null;
 	
 });
+
+function shuffleMemes()
+{
+		setTimeout(function(){
+	$('.grid').isotope('shuffle');
+	}, 200);
+}
 
 function pauseVid(){
   $('iframe[src*="//www.youtube.com/embed/"]').each(function(i) {
