@@ -34,6 +34,32 @@ $( document ).ready(function() {
 	memeContent.appendTo("#memes_section_content");
 	memeContent = null;
 	
+
+	
+	$('.mangaviewer').slick({
+  infinite: true,
+  speed: 500,
+  fade: true,
+  slidesToScroll: 1,
+  cssEase: 'linear',
+  asNavFor: '.mangaslider',
+  arrows: false,
+  adaptiveHeight: true
+});
+
+$('.mangaslider').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  asNavFor: '.mangaviewer',
+  centerMode: true,
+  focusOnSelect: true,
+
+});
+
+	let mangaContent = $("#manga").detach();
+	mangaContent.appendTo("#manga_section_content");
+	mangaContent = null;
+	
 });
 
 function shuffleMemes()
@@ -69,6 +95,22 @@ function InsertVidTabButtons(args)
 	})
 }
 
+function InsertMangaTabs(manganame)
+{
+	var manganames = manganame.split("|");
+	
+	manganames.forEach((manganames)=>{
+	document.write("<button class='tablinks' onclick='openTab(event,\""+manganames+"\")'>"+manganames+"</button>");
+	})
+}
+
+function InsertManga(divid, mangalink)
+{
+	var _insert = "<div id ="+divid+"class='tabcontent'>"+"<img class='grid-item' src='"+mangalink+"'></img>" + "</div>";
+	document.write(_insert);
+
+}
+
 function InsertMemes(args)
 {
 	var memes = args.split(" ");
@@ -86,3 +128,4 @@ function InsertVideo(type, divid, divclasses, vidid, vidLink)
 		_insert = "<div id ="+divid+" class = " +divclasses +" tabcontent'>" +"<iframe id = "+ vidid + " src="+"'"+ vidLink +"'"+" width='100%' height='90%' frameborder='5' allowfullscreen webkitallowfullscreen mozallowfullscreen scrolling='no'></iframe>" +" </div>";
 	document.write(_insert);
 }
+

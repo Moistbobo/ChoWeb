@@ -3,18 +3,21 @@
 
 <html xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
 	<head>
+
 		<!-- DEPENDENCIES -->
 		<script
-  src="https://code.jquery.com/jquery-3.2.1.min.js"
-  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-  crossorigin="anonymous"></script>
+				src="https://code.jquery.com/jquery-3.2.1.min.js"
+				integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+				crossorigin="anonymous"></script>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 			<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+			<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+			<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
 				<script src="https://moistbobo.github.io/ChoWeb/cho.js"></script> 
 			<link rel="stylesheet" type="text/css" href="https://moistbobo.github.io/ChoWeb/cho.css"/>
 
-	<!--		<script src="cho.js"></script>  
+			<!--	<script src="cho.js"></script>  
 			<link rel="stylesheet" type="text/css" href="cho.css"/> -->
 
 
@@ -27,17 +30,21 @@
 					<b:else/>
 					<b:if cond='data:blog.pageType != &quot;error_page&quot;'>
 						<data:blog.pageName/>
-          | 
+						| 
 						<data:blog.title/>
 						<b:else/>
-          Page Not Found | 
+						Page Not Found | 
 						<data:blog.title/>
 					</b:if>
 				</b:if>
 			</title>
 			<b:skin><![CDATA[]]></b:skin>
+
 		</head>
+
+
 		<body class="black">
+
 			<div class="mainsection black center">
 				<div style="height:80%;">
 					<img class="img" src="http://i.imgur.com/GPgk7IT.jpg"></img>
@@ -55,10 +62,10 @@
 			<div id="join_section_content" class="section black center collapse">
 				<div class="smallsection parallax white">
 					<p style="background-color:rgba(0,0,0,0.6); background-opacity:25%; margin-left:25%; margin-right:25%;">Are you Cho Material?<br>
-			Lvl 60+<br>
-			180AP without Offhand<br>
-			Saturday attendance + 80% node war attendance <br> 
-			PM Rweiss, Ricurdu, or Roots in game for a tryout
+							Lvl 60+<br>
+								180AP without Offhand<br>
+									Saturday attendance + 80% node war attendance <br> 
+										PM Rweiss, Ricurdu, or Roots in game for a tryout
 									</p>
 								</div>
 							</div>
@@ -69,16 +76,16 @@
 							<div id="video_section_content" class="section black center collapse">
 								<div class="tab center" id="videoTab">
 									<script>
-						InsertVidTabButtons("SE1E1 SE1E2 SE2E1");
-						InsertVideo(0,"SE1E1","tabcontent","vid1","https://www.youtube.com/embed/j3-QSBcuWJk?enablejsapi=1");
-						InsertVideo(0,"SE1E2","tabcontent","vid2","https://www.youtube.com/embed/dhtBcc5VPU4?enablejsapi=1");
-						InsertVideo(1,"SE2E1","tabcontent","vid3","https://vid.me/e/r7eb?stats=1?enablejsapi=1");
+										InsertVidTabButtons("SE1E1 SE1E2 SE2E1");
+										InsertVideo(0,"SE1E1","tabcontent","vid1","https://www.youtube.com/embed/j3-QSBcuWJk?enablejsapi=1");
+										InsertVideo(0,"SE1E2","tabcontent","vid2","https://www.youtube.com/embed/dhtBcc5VPU4?enablejsapi=1");
+										InsertVideo(1,"SE2E1","tabcontent","vid3","https://vid.me/e/r7eb?stats=1?enablejsapi=1");
 									</script>
 								</div>
 							</div>
 
 							<div class = "smallsection black center">
-								<div class="expandingButton expb_memes btn" data-toggle="collapse" data-target="#memes_section_content" onclick="ScrollToElement('#memes_section_content'); shuffleMemes(); pauseVid();"/>
+								<div class="expandingButton expb_memes btn" data-toggle="collapse" data-target="#memes_section_content" onclick="ScrollToElement('#memes_section_content'); shuffleMemes();"/>
 							</div>
 							<div id="memes_section_content" class="section black center collapse">
 
@@ -86,11 +93,34 @@
 
 							<div id="memecontent" class="grid gridcontents">
 								<script>
-			InsertMemes("http://i.imgur.com/o5QihUK.gif http://i.imgur.com/rkFeqYu.gif http://i.imgur.com/2B6p3k6.gif http://i.imgur.com/HYsyGbf.gif");</script>
+									InsertMemes("http://i.imgur.com/o5QihUK.gif http://i.imgur.com/rkFeqYu.gif http://i.imgur.com/2B6p3k6.gif http://i.imgur.com/HYsyGbf.gif http://i.imgur.com/Z0DO4az.gif http://i.imgur.com/iVK6pew.gif http://i.imgur.com/5JsN2hq.gif http://i.imgur.com/CGqiDLG.gif");</script>
 							</div>
+
+							<div class ="smallsection black center">
+								<div class="expandingButton expb_manga btn" data-toggle="collapse" data-target="#manga_section_content" onclick="ScrollToElement('#manga_section_content');"/>
+							</div>
+							<div id="manga_section_content" class="section black center collapse">
+
+							</div>
+							<div id="manga">
+
+								<div class="mangaslider center">
+									<p class="slidertext">Youcho Senki 1</p>
+									<p class="slidertext">Youcho Senki 2</p>
+								</div>
+								<div class="mangaviewer">
+									<img src="https://cdn.discordapp.com/attachments/211099152120020992/266598222036860928/chrome_2017-01-05_19-55-30.png"/>
+									<img src="https://cdn.discordapp.com/attachments/159467701113192448/287814481348657152/manga2.jpg"/>
+		
+								</div>
+								
+						<button onclick="ScrollToElement('#manga_section_content')">
+						<p>Back to Manga Section</p>
+						</button>
+							</div>
+
 							<!-- Blogger required sections -->
 							<b:section class='sidebar' id='sidebar' maxwidgets='' showaddelement='yes'/>
 							<b:section class='footer' id='footer' maxwidgets='' showaddelement='yes'/>
 						</body>
-
 					</html>
