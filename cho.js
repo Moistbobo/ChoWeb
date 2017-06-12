@@ -1,3 +1,5 @@
+
+
 function openTab(evt, movieName) {  
   //FIXME: THIS ENTIRE SHIT
   const vid1 = document.getElementById("SE1E1");
@@ -19,6 +21,8 @@ function openTab(evt, movieName) {
   document.getElementById(movieName).style.display = "block";
   evt.currentTarget.className += " active";
 }
+
+
 
 
 $( document ).ready(function() {	
@@ -113,9 +117,11 @@ function InsertManga(divid, mangalink)
 
 function InsertMemes(args)
 {
+	
+	var source =  "https://moistbobo.github.io/ChoWeb/gif/";
 	var memes = args.split(" ");
 	memes.forEach((memes)=>{
-	document.write("<img class='grid-item' src='"+memes+"'></img>");
+	document.write("<img class='grid-item' src='"+ source + memes+"'></img>");
 	})
 }
 

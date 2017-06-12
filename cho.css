@@ -32,8 +32,7 @@ div.tab button.active {
 }
 
 .parallax{
-	background-image: url('http://i.imgur.com/F6TOuCk.jpg');
-	
+	background-image: url('https://moistbobo.github.io/ChoWeb/images/parallax.jpg');
 	opacity: 5%;
 	background-attachment:fixed;
 	background-position: center;
@@ -79,35 +78,35 @@ div.tab button.active {
 }
 
 .expb_video{
-	background-image: url("https://i.imgur.com/4uoZjrA.png");
+	background-image: url("https://moistbobo.github.io/ChoWeb/images/videos_idle.png");
 }
 
 .expb_video:hover{
-	background-image: url("https://i.imgur.com/tCsO2AT.png");
+	background-image: url("https://moistbobo.github.io/ChoWeb/images/videos_hover.png");
 }
 
 .expb_join{
-	background-image: url("https://i.imgur.com/HIWrkNT.png");
+	background-image: url("https://moistbobo.github.io/ChoWeb/images/join_idle.png");
 }
 
 .expb_join:hover{
-	background-image: url("https://i.imgur.com/Hhfv4ig.png");
+	background-image: url("https://moistbobo.github.io/ChoWeb/images/join_hover.png");
 }
 
 .expb_memes{
-	background-image: url("https://i.imgur.com/8tzHbd1.png");
+	background-image: url("https://moistbobo.github.io/ChoWeb/images/memes_idle.png");
 }
 
 .expb_memes:hover{
-	background-image: url("https://i.imgur.com/0LtCtHk.png");
+	background-image: url("https://moistbobo.github.io/ChoWeb/images/memes_hover.png");
 }
 
 .expb_manga{
-	background-image: url("https://i.imgur.com/0y48Iod.png");
+	background-image: url("https://moistbobo.github.io/ChoWeb/images/manga_idle.png");
 }
 
 .expb_manga:hover{
-	background-image: url("https://i.imgur.com/1crR0vS.png");
+	background-image: url("https://moistbobo.github.io/ChoWeb/images/manga_hover.png");
 }
 
 .gridcontents{
